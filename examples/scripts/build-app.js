@@ -101,7 +101,7 @@ var builder = new Builder({
         'mithril': 'lib/mithril/mithril.min',
         'mithril-infinite': 'lib/mithril-infinite/mithril-infinite',
         'polythene': 'lib/polythene',
-        'polythene-theme': 'lib/polythene/theme',
+        'polythene-theme': 'lib/polythene-theme',
         'css': 'lib/system-css/css',
         'text': 'lib/system-text/text'
     }

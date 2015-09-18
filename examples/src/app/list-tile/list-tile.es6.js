@@ -1,4 +1,3 @@
-'use strict';
 
 import m from 'mithril';
 import listTile from 'polythene/list-tile/list-tile';

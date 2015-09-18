@@ -12,7 +12,7 @@ System.config({
         'marked': 'lib/marked/marked.min',
         'mithril': 'lib/mithril/mithril.min',
         'polythene': 'lib/polythene',
-        'polythene-theme': 'lib/polythene/theme',
+        'polythene-theme': 'lib/polythene-theme',
         'css': 'lib/system-css/css',
         'text': 'lib/system-text/text'
     }

@@ -1,4 +1,3 @@
-'use strict';
 
 import m from 'mithril';
 require('polythene/polythene/polythene');

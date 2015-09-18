@@ -1,4 +1,3 @@
-'use strict';
 
 import m from 'mithril';
 import icon from 'polythene/icon/icon';
@@ -35,7 +34,7 @@ module.view = () => {
                     label: 'Menu',
                     icon: {
                         svg: {
-                            group: 'navigation',
+                            group: 'google/navigation',
                             name: 'menu'
                         },
                         class: 'md'
@@ -45,7 +44,7 @@ module.view = () => {
                     label: 'Add',
                     icon: {
                         svg: {
-                            group: 'content',
+                            group: 'google/content',
                             name: 'add'
                         },
                         class: 'md'
@@ -55,7 +54,7 @@ module.view = () => {
                     label: 'Refresh',
                     icon: {
                         svg: {
-                            group: 'navigation',
+                            group: 'google/navigation',
                             name: 'refresh'
                         },
                         class: 'md'

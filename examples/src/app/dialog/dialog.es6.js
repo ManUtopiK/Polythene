@@ -3,7 +3,6 @@ In this example, variable window.dialog holds the active dialog component (as a 
 In index.es6.js the dialog is rendered in the app.view function.
 */
 
-'use strict';
 
 import m from 'mithril';
 import button from 'polythene/button/button';

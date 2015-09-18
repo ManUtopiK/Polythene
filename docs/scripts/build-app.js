@@ -79,7 +79,7 @@ var builder = new Builder({
         'lodash': 'lib/lodash',
         'mithril': 'lib/mithril/mithril.min',
         'polythene': 'lib/polythene',
-        'polythene-theme': 'lib/polythene/theme',
+        'polythene-theme': 'lib/polythene-theme',
         'css': 'lib/system-css/css',
         'text': 'lib/system-text/text'
     }

@@ -9,7 +9,8 @@
     "baseURL": "src"
   },
   "dependencies": {
-    "mithril": "^0.2.0"
+    "mithril": "^0.2.0",
+    "j2c": "^0.7.3"
   },
   "devDependencies": {
     "shelljs": "",
@@ -28,8 +29,8 @@
     "verge": "^1.9.1"
   },
   "scripts": {
-    "postinstall": "npm run copy-libs && npm run transpile",
-    "symlink-polythene": "node ../scripts/symlink-polythene.js ../lib src/lib/polythene",
+    "postinstall": "npm run copy-libs",
+    "symlink-polythene": "node ../scripts/symlink-polythene.js ../polythene src/lib/polythene && node ../scripts/symlink-polythene.js ../polythene-theme src/lib/polythene-theme",
     "copy-libs": "node scripts/copy-libs src/lib && npm run symlink-polythene",
     "watch-es6": "node ../scripts/watch-es6.js src/ src/lib/",
     "watch-css": "node ../scripts/watch-scss.js src/ src/lib/",

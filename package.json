@@ -6,6 +6,8 @@
   "main": "",
   "directories": {},
   "dependencies": {
+    "mithril": "^0.2.0",
+    "j2c": "^0.7.3",
     "material-colors": "^1.0.0",
     "material-design-iconic-font": "^2.1.2"
   },
@@ -16,7 +18,6 @@
     "cpr": "",
     "find": "",
     "sass": "",
-    "mithril": "^0.2.0",
     "autoprefixer": "",
     "clean-css": "",
     "uglify-js": "",
@@ -27,13 +28,13 @@
   },
   "scripts": {
     "postinstall": "node scripts/copy-deps.js",
-    "watch-css": "node scripts/watch-scss.js lib/",
-    "watch-es6": "node scripts/watch-es6.js lib/",
+    "watch-css": "node scripts/watch-scss.js polythene/ & node scripts/watch-scss.js polythene-theme/",
+    "watch-es6": "node scripts/watch-es6.js polythene/ & node scripts/watch-es6.js polythene-theme/",
     "watch": "npm run watch-css & npm run watch-es6",
-    "transpile-css": "node scripts/watch-scss.js lib/ null once",
-    "transpile-js": "node scripts/watch-es6.js lib/ null once",
+    "transpile-css": "node scripts/watch-scss.js polythene/ null once && node scripts/watch-scss.js polythene-theme/ null once",
+    "transpile-js": "node scripts/watch-es6.js polythene/ null once && node scripts/watch-es6.js polythene-theme/ null once",
     "transpile": "npm run transpile-css && npm run transpile-js",
-    "clean": "rimraf node_modules && rimraf external_modules && rimraf lib/deps/ && find ./lib -name \"*.js\" -not -name \"*.es6.js\" -print | xargs rimraf && find ./lib -name \"*.css\" -print | xargs rimraf"
+    "clean": "rimraf node_modules && rimraf external_modules && rimraf polythene/deps/ && find ./lib -name \"*.js\" -not -name \"*.es6.js\" -print | xargs rimraf && find ./lib -name \"*.css\" -print | xargs rimraf"
   },
   "repository": {
     "type": "git",

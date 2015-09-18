@@ -78,20 +78,26 @@ var transform = function(inPath, outPath) {
     execute(cmd);
 };
 
+var onChange = function(path) {
+    if (isValidFile(path)) {
+        console.log(validExtension, 'file changed, transpiling', path);
+        transform(path, createOutPath(path));
+    }
+};
+
+var onAdd = function(path) {
+    if (isValidFile(path)) {
+        console.log(validExtension, 'file found, transpiling', path);
+        transform(path, createOutPath(path));
+    }
+};
 
 if (persistent) {
-    watcher.on('change', function(path) {
-        if (isValidFile(path)) {
-            console.log(validExtension, 'file changed, transpiling', path);
-            transform(path, createOutPath(path));
-        }
-    });
+    watcher.on('add', onAdd);
+    watcher.on('change', onChange);
 } else {
     watcher.on('add', function(path) {
-        if (isValidFile(path)) {
-            console.log(validExtension, 'file found, transpiling', path);
-            transform(path, createOutPath(path));
-            watcher.unwatch(path);
-        }
+        onAdd(path);
+        watcher.unwatch(path);
     });
 }

@@ -42,6 +42,10 @@ copy('mithril', [
     'node_modules/mithril/mithril.min.js.map'
 ]);
 
+copy('j2c', [
+    'node_modules/j2c/dist/j2c.global.min.js'
+]);
+
 copy('mithril-infinite', [
     'node_modules/mithril-infinite/lib/mithril-infinite.js',
     'node_modules/mithril-infinite/lib/mithril-infinite.css'

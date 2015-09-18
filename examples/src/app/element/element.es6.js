@@ -1,4 +1,3 @@
-'use strict';
 
 import m from 'mithril';
 import element from 'polythene/element/element';

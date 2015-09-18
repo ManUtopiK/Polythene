@@ -12,7 +12,8 @@ System.config({
         'mithril-infinite': 'lib/mithril-infinite/mithril-infinite',
         'verge': 'lib/verge/verge.min',
         'polythene': 'lib/polythene',
-        'polythene-theme': 'lib/polythene/theme',
+        'polythene-theme': 'lib/polythene-theme',
+        'j2c': 'lib/j2c/j2c.global.min',
         'css': 'lib/system-css/css',
         'text': 'lib/system-text/text'
     }

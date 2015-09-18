@@ -1,4 +1,3 @@
-'use strict';
 
 import m from 'mithril';
 import headerPanel from 'polythene/header-panel/header-panel';

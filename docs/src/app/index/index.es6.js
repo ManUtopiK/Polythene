@@ -1,4 +1,3 @@
-'use strict';
 
 import pluck from 'lodash/collection/pluck';
 import forEach from 'lodash/collection/forEach';

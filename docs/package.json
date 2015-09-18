@@ -25,8 +25,8 @@
         "system-text": ""
     },
     "scripts": {
-        "postinstall": "npm run copy-libs && npm run symlink-polythene && npm run transpile",
-        "symlink-polythene": "node ../scripts/symlink-polythene.js ../lib src/lib/polythene",
+        "postinstall": "npm run copy-libs && npm run symlink-polythene",
+        "symlink-polythene": "node ../scripts/symlink-polythene.js ../polythene src/lib/polythene && node ../scripts/symlink-polythene.js ../polythene-theme src/lib/polythene-theme",
         "copy-libs": "node scripts/copy-libs src/lib",
         "copy-docs": "node scripts/copy-docs ../lib/ ./src/app/docs/",
         "watch-es6": "node ../scripts/watch-es6.js src/ src/lib/",

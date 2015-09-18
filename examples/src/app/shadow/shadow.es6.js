@@ -1,4 +1,3 @@
-'use strict';
 
 import m from 'mithril';
 import shadow from 'polythene/shadow/shadow';

@@ -1,4 +1,3 @@
-'use strict';
 
 import infinite from 'mithril-infinite';
 import m from 'mithril';
